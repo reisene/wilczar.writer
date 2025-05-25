@@ -175,6 +175,7 @@ article p {
 }
 
 /* Sections Styles */
+/* About Section */
 #about .author-photo {
   margin: 10px auto;
   display: block;
@@ -184,6 +185,7 @@ article p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* Projects Section */
 #projects {
   display: flex;
   flex-wrap: wrap;
@@ -212,6 +214,10 @@ article p {
   margin: 10px;
 }
 
+/* Contact Section */
+#contact #contact-intro {
+  text-align: center;
+}
 #contact .contact {
   display: flex;
   justify-content: space-between;

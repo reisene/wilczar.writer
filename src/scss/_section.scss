@@ -2,6 +2,8 @@
 @use "_fonts.scss" as *;
 @use "sass:map";
 /* Sections Styles */
+
+/* About Section */
 #about{
     .author-photo{
         margin: 10px auto;
@@ -13,6 +15,7 @@
     }
 }
 
+/* Projects Section */
 #projects{
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +47,11 @@
     }
 }
 
+/* Contact Section */
 #contact{
+    #contact-intro{
+        text-align: center;
+    }
     .contact{
         display: flex;
         justify-content: space-between;
