@@ -256,6 +256,15 @@ article p {
 #contact .contact .contact-social ul li i {
   margin-right: 5px;
 }
+#contact .contact .contact-info ul li a .note,
+#contact .contact .contact-info ul li span .note,
+#contact .contact .contact-social ul li a .note,
+#contact .contact .contact-social ul li span .note {
+  font-size: 0.85em;
+  color: #ccc;
+  margin-left: 4px;
+  font-style: italic;
+}
 #contact .contact .contact-info ul li + li,
 #contact .contact .contact-social ul li + li {
   margin: 5px 0; /* Add space between list items */
