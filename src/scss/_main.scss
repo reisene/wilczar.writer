@@ -1,0 +1,61 @@
+@use "_variables.scss" as *;
+@use "_fonts.scss" as *;
+@use "sass:map";
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 1200px;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    section {
+        flex: 1;
+        padding: 20px;
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        article{
+            text-align: justify;
+            margin: 0 auto;
+            line-height: 1.5;
+            padding: 0 10px;
+            width: 80%;
+
+            h3{
+                font-family: $h3-font;
+                font-size: 1.5em;
+                font-weight: 600;
+                color: $primary-color;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+        
+        h2 {
+            text-align: center;
+            font-family: "Eagle Lake", cursive;
+            font-size: 2em;
+            display: block;
+            margin: 0 auto 20px;
+            border-bottom: 2px solid $primary-color;
+            padding: 0 20px 10px;
+            width: 80%;
+        }
+    }
+}
+
+article {
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}

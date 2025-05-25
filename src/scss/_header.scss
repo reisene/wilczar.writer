@@ -1,0 +1,46 @@
+@use "_variables.scss" as *;
+@use "_fonts.scss" as *;
+@use "sass:map";
+
+/* Header Styles */
+header {
+    font-family: $header-font;
+    padding: 60px 0;
+    text-align: center;
+    background: url(../img/larion_background.jpeg) no-repeat center center/cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    border-radius: 10px;
+    border: 50px solid transparent;
+    border-image-source: url(../img/celtic-border-golden.svg);
+    border-image-slice: 700;
+    border-image-repeat: round;
+    border-image-width: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1200px; 
+    margin: 0 auto;
+    z-index: 1;
+
+    .header-content {
+        position: relative;
+        display: inline-block;
+        padding: 20px 40px;
+        text-shadow: map.get($text-shadow, "dark");
+        border-radius: 10px;
+        font-variant: small-caps;
+        font-weight: 600;
+        color: #ffd;
+        z-index: 1;
+    
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.5em;
+            color: #fffbf0;
+        }
+    }
+}

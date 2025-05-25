@@ -1,0 +1,69 @@
+@use "_variables.scss" as *;
+@use "_fonts.scss" as *;
+@use "sass:map";
+
+/* Navigation Styles */
+#menu {
+    font-family: $header-font;
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 !important;
+    ul {
+        position: relative;
+        background-color: rgba(51, 51, 51, 0.7);
+        backdrop-filter: blur(4px);
+        border-radius: 8px;
+        box-shadow: 0 0 10px #000;
+        justify-content: center;
+        list-style: none;
+        padding: 5px;
+        display: inline-flex;
+        margin: 10px 0;
+        li {
+            margin: 0 15px;
+        
+            a {
+                min-width: 100px;
+                text-decoration: none;
+                color: $primary-color;
+                padding: 15px 10px;
+                border-radius: 5px;
+                transition: all 0.2s ease;
+                display: block;
+                position: relative;
+                .menu-label {
+                    display: inline;
+                    margin-left: 8px;
+                }
+            
+                &:hover {
+                    color: #fffbf0;
+                    text-shadow: 0 0 3px #fff, 0 0 6px $primary-color;
+                    font-weight: 600;
+                    transform: scale(1.05);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 5px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $primary-color;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.3s ease;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}

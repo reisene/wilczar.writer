@@ -1,0 +1,16 @@
+/*Footer Styles*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    color: #aaa;
+    min-height: 80px;
+
+    #copyright {
+        font-size: 0.9em;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

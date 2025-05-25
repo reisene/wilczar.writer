@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+
+# SCSS sourcemaps
+*.css.map
+*.scssc
+
+# Live Sass Compiler temp files
+.vscode/**/.sass-cache/
+.vscode/**/.sass-output.css
+
+# Public build files (jeśli tworzysz z Gulpem)
+public_html/css/*.map
+public_html/js/*.map
+
+# Gulp cache (jeśli używasz np. gulp-cache)
+.cache/
+.temp/
+
+# Systemowe
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE i edytory
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logi i środowisko
+*.log
+.env
+.env.*
+
+# Git backup files
+*.orig
+
+# Optional – backupy Windowsa
+*.bak
+*.tmp
+
+# Optional – pliki tymczasowe
+*.temp

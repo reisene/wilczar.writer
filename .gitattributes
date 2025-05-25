@@ -1,0 +1,29 @@
+# Wymuś LF w repozytorium niezależnie od systemu
+* text=auto eol=lf
+
+# Tekstowe pliki projektowe
+*.html text
+*.css text
+*.scss text
+*.js text
+*.json text
+*.md text
+*.xml text
+*.svg text
+*.ts text
+*.tsx text
+
+# Pliki binarne
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Kontrola line endings dla zależności
+package-lock.json text eol=lf
+yarn.lock text eol=lf

@@ -1,0 +1,24 @@
+@use "_variables.scss" as *;
+@use "_fonts.scss" as *;
+@use "sass:map";
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: $body-font;
+    background-color: #1e1e1e;
+    color: $body-color;
+    line-height: 1.6;
+    padding: 15px;
+    padding-bottom: 0;
+}

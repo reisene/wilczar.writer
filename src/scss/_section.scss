@@ -1,0 +1,86 @@
+@use "_variables.scss" as *;
+@use "_fonts.scss" as *;
+@use "sass:map";
+#about{
+    .author-photo{
+        margin: 10px auto;
+        display: block;
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    #book-list{
+        display: flex;
+        flex-direction: wrap;
+        gap: 10px;
+        margin: 0 auto;
+        width: 80%;
+        justify-content: center;
+
+        li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .project-card{
+        background-color: #2e2e2e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: calc(33% - 40px);
+        margin: 10px;
+    }
+}
+
+#contact{
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 20px 0;
+
+        .contact-info,
+        .contact-social {
+            flex: 1 1 300px; // elastyczne, ale minimum 300px
+            h3{
+                color: $body-color;
+            }
+            text-align: center;
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0 auto;
+                li{
+                    a{
+                        color: $primary-color;
+                        text-decoration: none;
+                        &:hover{
+                            font-weight: bold;
+                            color: $secondary-color; /* Slightly brighter gold */
+                            transition: all 0.3s ease;
+                            text-shadow: map.get($text-shadow, "light");
+                        }
+                    }
+                    i{
+                        margin-right: 5px;
+                    }
+                }
+                li + li {
+                    margin: 5px 0; /* Add space between list items */
+                }
+            }
+        }
+    }
+}
