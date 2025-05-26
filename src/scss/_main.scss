@@ -1,5 +1,5 @@
-@use "_variables.scss" as *;
-@use "_fonts.scss" as *;
+@use "helpers/variables" as *;
+@use "helpers/fonts" as *;
 @use "sass:map";
 
 /* Main Content Styles */
@@ -34,6 +34,9 @@ main {
                 text-align: center;
                 margin-top: 10px;
             }
+            p {
+                margin-bottom: 20px;
+            }
         }
         
         h2 {
@@ -46,16 +49,5 @@ main {
             padding: 0 20px 10px;
             width: 80%;
         }
-    }
-}
-
-article {
-    h3 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin-bottom: 20px;
     }
 }

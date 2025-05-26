@@ -1,12 +1,11 @@
-@use "_variables.scss" as *;
-@use "_fonts.scss" as *;
+@use "../helpers/variables" as *;
+@use "../helpers/fonts" as *;
 @use "sass:map";
 
 /* Header Styles */
 header {
     font-family: $header-font;
     padding: 60px 0;
-    text-align: center;
     background: url(../img/larion_background.jpeg) no-repeat center center/cover;
     background-clip: border-box;
     background-origin: border-box;
@@ -17,9 +16,7 @@ header {
     border-image-repeat: round;
     border-image-width: 50px;
     box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    max-width: 1200px; 
+    overflow: visible; 
     margin: 0 auto;
     z-index: 1;
 

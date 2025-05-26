@@ -1,5 +1,5 @@
-@use "_variables.scss" as *;
-@use "_fonts.scss" as *;
+@use "../helpers/variables" as *;
+@use "../helpers/fonts" as *;
 @use "sass:map";
 
 /* Navigation Styles */
@@ -7,12 +7,12 @@
     font-family: $header-font;
     display: block;
     position: sticky;
-    top: 0;
-    left: 50%;
-    z-index: 1000;
+    text-align: center;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
+    max-width: 1200px;
+    top: 0;
+    z-index: 1000;
     padding: 0 !important;
     ul {
         position: relative;
