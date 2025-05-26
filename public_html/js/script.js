@@ -1,4 +1,4 @@
-import { updateFooter } from './utils/footer.js';
+import { updateFooter } from './utils/footer.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     updateFooter();
