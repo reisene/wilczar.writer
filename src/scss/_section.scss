@@ -1,5 +1,5 @@
-@use "_variables.scss" as *;
-@use "_fonts.scss" as *;
+@use "helpers/_variables" as *;
+@use "helpers/fonts" as *;
 @use "sass:map";
 /* Sections Styles */
 
@@ -55,13 +55,13 @@
     .contact{
         display: flex;
         justify-content: space-between;
-        gap: 40px;
+        gap: 20px;
         flex-wrap: wrap;
         padding: 20px 0;
 
         .contact-info,
         .contact-social {
-            flex: 1 1 300px; // elastyczne, ale minimum 300px
+            flex: 1 1 400px; // elastyczne, ale minimum 300px
             h3{
                 color: $body-color;
             }
@@ -97,6 +97,22 @@
                 li + li {
                     margin: 5px 0; /* Add space between list items */
                 }
+            }
+        }
+    }
+
+    .support {
+        text-align: center;
+        margin-top: 20px;
+        h3{
+            color: $body-color;
+        }
+        div {
+            margin: 0 auto;
+            h3 {
+                font-family: $body-font;
+                color: black;
+                font-weight: lighter;
             }
         }
     }

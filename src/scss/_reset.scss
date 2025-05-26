@@ -1,5 +1,5 @@
-@use "_variables.scss" as *;
-@use "_fonts.scss" as *;
+@use "helpers/variables" as *;
+@use "helpers/fonts" as *;
 @use "sass:map";
 
 /* CSS Reset */
@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px; // Base font size
 }
 
 
@@ -19,6 +20,5 @@ body {
     background-color: #1e1e1e;
     color: $body-color;
     line-height: 1.6;
-    padding: 15px;
-    padding-bottom: 0;
+    padding: 0 15px;
 }
