@@ -1,0 +1,75 @@
+# Add 'root' label to any root file changes
+# Quotation marks are required for the leading asterisk
+root:
+- changed-files:
+  - any-glob-to-any-file: '*'
+
+# Add 'AnyChange' label to any changes within the entire repository
+AnyChange:
+- changed-files:
+  - any-glob-to-any-file: '**'
+
+# Add 'config' label to any file changes within the config folder
+config:
+- changed-files:
+  - any-glob-to-any-file: 
+    - config/*'
+    - config/**/*
+    - '**/*.yml'
+
+# Add 'test' label to any file changes within the test folder
+test:
+- changed-files:
+  - any-glob-to-any-file: 
+    - test/*'
+    - test/**/*
+    - '**/*.test.js'
+    - '**/*.spec.js'
+
+# Add 'docs' label to any file changes within the docs folder
+docs:
+- changed-files:
+  - any-glob-to-any-file: 
+    - docs/*'
+    - docs/**/*
+    - '**/*.md'
+    - '**/*.rst'
+
+# Add 'guides' label to any file changes within the guides folder
+guides:
+- changed-files:
+  - any-glob-to-any-file: 
+    - guides/*'
+    - guides/**/*
+    - '**/*.md'
+    - '**/*.rst'
+
+# Add 'Documentation' label to any file changes within 'docs' or 'guides' folders
+Documentation:
+- changed-files:
+  - any-glob-to-any-file:
+    - docs/*
+    - guides/*
+
+# Add 'source' label to any change to src files within the source dir EXCEPT for the docs sub-folder
+source:
+- changed-files:
+    - any-glob-to-any-file: 'src/**/*'
+    
+# Add 'source-docs' label to any change to src files within the source/docs sub-folder
+source-docs:
+- changed-files:
+    - any-glob-to-any-file: 'src/docs/**/*'
+
+# Add 'feature' label to any PR where the head branch name starts with `feature` or has a `feature` section in the name
+feature:
+ - head-branch: ['^feature', 'feature']
+
+# Add 'release' label to any PR that is opened against the `main` branch
+release:
+ - base-branch: 'main'
+
+# Add 'bug' label to any PR that is opened against the `main` branch
+bug:
+ - head-branch: ['^bug', 'bug']
+
