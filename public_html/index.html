@@ -18,19 +18,13 @@
         <!--- Custom Stylesheets -->
         <link rel="stylesheet" href="css/style.css">
 
-        <!-- Sentry -->
-        <script src='https://js-de.sentry-cdn.com/02901149a9795f4a6dff3611c02d799d.min.js' crossorigin="anonymous"></script>
-        <script>
-            Sentry.onLoad(function() {
-                Sentry.init({
-                    // Tracing
-                    tracesSampleRate: 1.0, // Capture 100% of the transactions
-                    // Session Replay
-                    replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
-                    replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-                });
-            });
-        </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N74C7SDK');</script>
+        <!-- End Google Tag Manager -->
 
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -42,8 +36,13 @@
         <!-- Custom JS -->
         <script type="module" src="js/script.js"></script>
 
+
     </head>
     <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N74C7SDK"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         
         <div class="header-wrapper" id="header-wrapper">
             <div class="header-social">
@@ -71,7 +70,9 @@
                 </ul>
                 <ul class="support-icons">
                     <li>
-                        <a href="https://buycoffee.to/katarzyna.wilczar" target="_blank"><img src="https://buycoffee.to/img/share-button-dark.png" style="width: 136px; height: 35px" alt="Postaw mi kawę na buycoffee.to"></a>
+                        <a href="https://buycoffee.to/katarzyna.wilczar" target="_blank">
+                            <img src="https://buycoffee.to/img/share-button-dark.png" style="width: 136px; height: 35px" alt="Postaw mi kawę na buycoffee.to">
+                        </a>
 
                     </li>
                 </ul>
@@ -320,6 +321,11 @@
                 <span id="separator"> | </span>
                 Wszelkie prawa zastrzeżone
             </p>
+
+            <button id="toTopBtn" class="to-top" aria-label="Wróć na górę">
+                <i class="bi bi-arrow-up-circle" id="topIcon"></i>
+                <span class="text">Do góry</span>
+            </button>
         </footer>
 
     </body>
