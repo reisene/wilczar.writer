@@ -1,7 +1,12 @@
 import { updateFooter, initFooterButton } from './modules/footer.mjs';
 import { debounce } from './utils/debounce.mjs';
+import { stickyFallback } from './modules/stickywrapper.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize sticky menu fallback
+    stickyFallback();
+    
+    // Update footer and initialize footer button
     updateFooter();
     window.addEventListener('resize', debounce(updateFooter, 300));
     initFooterButton();

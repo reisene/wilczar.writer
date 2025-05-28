@@ -63,7 +63,14 @@
         }
     }
 
-    
+    #header-wrapper.is-sticky {
+        min-height: 20px;
+        padding: 5px 0;
+        header#main-header {
+            display: none;
+        }
+    }
+
     main {
         flex-direction: column;
         gap: 15px;
