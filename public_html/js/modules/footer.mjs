@@ -1,8 +1,9 @@
 export function updateFooter() {
     const yearEl = document.getElementById('year');
-    const sepEl = document.getElementById('separator');
+    const sepEls = document.getElementsByClassName('separator');
     const baseYear = 2025;
     const currentYear = new Date().getFullYear();
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
     if (yearEl) {
         yearEl.textContent = currentYear > baseYear
@@ -10,10 +11,8 @@ export function updateFooter() {
             : `${baseYear}`;
     }
 
-    if (sepEl) {
-        sepEl.innerHTML = window.matchMedia('(max-width: 768px)').matches
-            ? '<br>'
-            : ' | ';
+    for (let i = 0; i < sepEls.length; i++) {
+        sepEls[i].innerHTML = isMobile ? '<br>' : ' | ';
     }
 }
 

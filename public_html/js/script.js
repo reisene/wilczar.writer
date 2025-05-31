@@ -1,6 +1,7 @@
 import { updateFooter, initFooterButton } from './modules/footer.mjs';
 import { debounce } from './utils/debounce.mjs';
 import { stickyFallback } from './modules/stickywrapper.mjs';
+import { initToc } from './modules/toc.mjs';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize sticky menu fallback
@@ -23,5 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
 
+    // Initialize Table of Contents
+    const path = window.location.pathname;
+
+    if (
+        path.includes("/policies/privacy.html") ||
+        path.includes("/policies/rodo.html")
+    ) {
+        try{
+            initToc();
+        } catch (error) {
+            console.error("Error initializing Table of Contents:", error);
+            Sentry.captureException(error, {
+                extra: {
+                    path: path,
+                    message: "Failed to initialize Table of Contents"
+                }
+            });
+        }
+    }
+});

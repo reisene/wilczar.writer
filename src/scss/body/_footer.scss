@@ -1,0 +1,114 @@
+@use "../helpers/variables" as *;
+@use "../helpers/fonts" as *;
+@use "../helpers/mixins" as *;
+
+/*Footer Styles*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 20px;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid #444;
+    color: #aaa;
+    min-height: 80px;
+    position: relative;
+
+    #copyright {
+        font-size: 0.9em;
+        text-align: center;
+        margin: 0 auto;
+        justify-content: center;
+        z-index: 1;
+        span.separator {
+            padding: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            span.separator {
+                padding: 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            border-top: 1px transparent solid;
+            border-bottom: 1px transparent solid;
+            transition: all 0.3 ease;
+
+            &:hover{
+                color: $body-color;
+                font-weight: bold;
+                border-color: currentColor;
+                
+            }
+        }
+    }
+    
+
+    #policies {
+        position: absolute;
+        top: 100%;
+        font-size: 0.75rem;
+        a{
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            padding: 0.25rem;
+            padding-bottom: 0.75rem;
+
+            &:hover{
+                color: $body-color;
+            }
+
+            @include underline(
+                $color: $primary-color,
+                $height: 1px,
+                $bottom: 0.5rem
+            );
+        }
+    }
+
+    .to-top {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: #aaa;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        i {
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        &:hover i {
+            transform: scale(1.2);
+        }
+
+        .text {
+            display: inline-block;
+        }
+    }
+    @media (max-width: 768px) { 
+        .to-top {
+            right: 10px;        
+            .text {
+                display: none;
+            }
+        }
+    }
+
+}

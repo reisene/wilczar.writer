@@ -142,4 +142,43 @@
             }
         }
     }
+    #privacy-policy .privacy-content {
+        padding: 0;
+        margin: 0 auto;
+        ol {
+            padding-left: 1rem; /* lub mniej/mocniej wcięte */
+        }
+
+        ol > li {
+            margin-left: 0.5rem;
+        }
+        ul {
+            padding-left: 1rem; /* lub mniej/mocniej wcięte */
+        }
+        ul > li {
+            margin-left: 0.5rem;
+        }
+        ol.I {
+            width: 95%;
+            padding: 0;
+            margin: 0 auto;
+            justify-content: center;
+            line-break: auto;
+            li {
+                margin: 5px auto;
+                padding: 0 10px;
+                font-size: 0.8rem;
+                ol li{
+                    list-style-position: inside;
+                }
+            }
+        }
+    }
+    footer{
+        padding: 20px 0;
+        p#copyright {
+            font-size: 0.75rem;
+        }
+
+    }
 }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
+        <title>Katarzyna Wiłczar</title>
+
         @@include('head.html')
 
     </head>
@@ -13,31 +15,18 @@
         @@include('header.html')
 
         <main>
-            <section id="about">
-                @@include('about.html')
-            </section>
-
-            <section id="projects">
-                @@include('projects.html')
-            </section>
-
-            <section id="contact">
-                @@include('contact.html')
-            </section>
+            
+            @@include('about.html')
+            
+            @@include('projects.html')
+            
+            @@include('contact.html')
+            
 
         </main>
         
         <footer>
-            <p id="copyright">
-                &copy; <span id="year">2025</span> Katarzyna Wiłczar
-                <span id="separator"> | </span>
-                Wszelkie prawa zastrzeżone
-            </p>
-
-            <button id="toTopBtn" class="to-top" aria-label="Wróć na górę">
-                <i class="bi bi-arrow-up-circle" id="topIcon"></i>
-                <span class="text">Do góry</span>
-            </button>
+            @@include('footer.html')
         </footer>
 
     </body>

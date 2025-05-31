@@ -1,11 +1,13 @@
-@use "_reset.scss";
+@use "body/_reset.scss";
 
 @use "header-wrapper.scss";
 
-@use "_main.scss";
+@use "body/_main.scss";
 
-@use "_section.scss";
+@use "body/_section.scss";
 
-@use "_footer.scss";
+@use "_policies.scss";
+
+@use "body/_footer.scss";
 
 @use "_media.scss";
