@@ -1,3 +1,22 @@
+/**
+ * @file stickywrapper.mjs
+ * @module stickywrapper
+ * @author AKNETH Studio Katarzyna Pawłowska-Malesa
+ * @date 2025-06-01
+ * @description
+ * Zapewnia fallback dla efektu sticky nagłówka nawigacji.
+ * Po przewinięciu strony dodaje klasę 'is-sticky' do #header-wrapper i odpowiednio ustawia margines górny dla <main>,
+ * aby treść nie była zasłonięta przez nagłówek.
+ *
+ * Wymaga obecności elementów o id: 'header-wrapper' (nawigacja) i <main> (główna treść).
+ *
+ * @function stickyFallback
+ * @export
+ * @example
+ * import { stickyFallback } from './modules/stickywrapper.mjs';
+ * stickyFallback();
+ */
+
 export function stickyFallback() {
     const nav = document.getElementById('header-wrapper');
     const main = document.querySelector('main');

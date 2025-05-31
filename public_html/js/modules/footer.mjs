@@ -1,3 +1,24 @@
+/**
+ * @file footer.mjs
+ * @module footer
+ * @author AKNETH Studio Katarzyna Pawłowska-Malesa
+ * @date 2025-06-01
+ * @description
+ * Moduł obsługujący dynamiczną aktualizację stopki strony.
+ * - updateFooter: Ustawia zakres lat w stopce oraz zmienia separatory w zależności od szerokości ekranu.
+ * - initFooterButton: Obsługuje przycisk przewijania do góry oraz efekt ikony na hover.
+ *
+ * Wymaga obecności elementów: #year, .separator, #toTopBtn, #topIcon.
+ *
+ * @function updateFooter
+ * @function initFooterButton
+ * @export
+ * @example
+ * import { updateFooter, initFooterButton } from './modules/footer.mjs';
+ * updateFooter();
+ * initFooterButton();
+ */
+
 export function updateFooter() {
     const yearEl = document.getElementById('year');
     const sepEls = document.getElementsByClassName('separator');

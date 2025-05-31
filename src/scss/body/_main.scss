@@ -1,3 +1,20 @@
+/// Główne style sekcji <main> oraz sekcji i artykułów w treści.
+/// 
+/// @group main
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Definiuje układ, responsywność i wygląd głównej zawartości strony.
+/// Zawiera stylizację sekcji, artykułów, nagłówków oraz efektów wizualnych.
+/// 
+/// @example scss
+///   main {
+///     display: flex;
+///     flex-direction: column;
+///     // ...
+///   }
+///
+
 @use "../helpers/variables" as *;
 @use "../helpers/fonts" as *;
 @use "sass:map";

@@ -1,3 +1,24 @@
+/**
+ * @file script.js
+ * @module main
+ * @author AKNETH Studio Katarzyna Pawłowska-Malesa
+ * @date 2025-06-01
+ * @description
+ * Główny plik inicjalizujący funkcje interfejsu strony:
+ * - Sticky menu fallback dla nagłówka.
+ * - Dynamiczna aktualizacja stopki i obsługa przycisku przewijania do góry.
+ * - Płynne przewijanie do sekcji po kliknięciu w linki kotwicowe.
+ * - Inicjalizacja panelu spisu treści (TOC) na stronach polityk.
+ *
+ * Wymaga obecności odpowiednich modułów i elementów DOM.
+ *
+ * @example
+ * import { updateFooter, initFooterButton } from './modules/footer.mjs';
+ * import { stickyFallback } from './modules/stickywrapper.mjs';
+ * import { initToc } from './modules/toc.mjs';
+ * // Automatycznie wywoływany po załadowaniu DOM
+ */
+
 import { updateFooter, initFooterButton } from './modules/footer.mjs';
 import { debounce } from './utils/debounce.mjs';
 import { stickyFallback } from './modules/stickywrapper.mjs';

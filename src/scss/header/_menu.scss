@@ -1,3 +1,11 @@
+/// Style nawigacji głównej strony (#menu).
+///
+/// @group header
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Odpowiada za wygląd, układ i efekty interakcji menu nawigacyjnego, w tym podkreślenia i animacje linków.
+/// 
 @use "../helpers/variables" as *;
 @use "../helpers/fonts" as *;
 @use "../helpers/mixins" as *;

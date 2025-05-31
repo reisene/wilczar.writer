@@ -1,3 +1,18 @@
+/// Główne style stopki strony.
+/// 
+/// @group footer
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Zawiera stylizację głównej stopki, sekcji copyright, linków, separatorów oraz przycisku przewijania do góry.
+/// Uwzględnia responsywność i efekty hover.
+/// 
+/// @example scss
+///   footer {
+///     // ...
+///   }
+///
+
 @use "../helpers/variables" as *;
 @use "../helpers/fonts" as *;
 @use "../helpers/mixins" as *;

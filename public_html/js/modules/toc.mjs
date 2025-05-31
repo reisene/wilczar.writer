@@ -1,3 +1,22 @@
+/**
+ * @file toc.mjs
+ * @module toc
+ * @author AKNETH Studio Katarzyna Pawłowska-Malesa
+ * @date 2025-06-01
+ * @description
+ * Inicjalizuje i obsługuje panel spisu treści (TOC) na stronie.
+ * Zapewnia płynne przewijanie do sekcji, automatyczne i manualne zamykanie panelu,
+ * obsługę klawiatury, dotyku oraz interakcji użytkownika.
+ *
+ * Wymaga obecności elementów o id: "toc-toggle" (przycisk) i "toc-panel" (panel TOC).
+ *
+ * @function
+ * @export
+ * @example
+ * import { initToc } from './modules/toc.mjs';
+ * initToc();
+ */
+
 export function initToc() {
 
     const toggleButton = document.getElementById("toc-toggle");

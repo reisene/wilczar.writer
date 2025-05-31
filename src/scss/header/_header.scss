@@ -1,3 +1,11 @@
+/// Style głównego nagłówka strony (header#main-header).
+///
+/// @group header
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Zawiera stylizację nagłówka, tytułu, podtytułu oraz efektów tekstowych w sekcji głównej strony.
+/// 
 @use "../helpers/variables" as *;
 @use "../helpers/fonts" as *;
 @use "sass:map";

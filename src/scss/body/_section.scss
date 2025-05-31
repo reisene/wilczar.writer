@@ -1,3 +1,12 @@
+/// Style sekcji głównych strony: o mnie, projekty, kontakt.
+/// 
+/// @group section
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Plik zawiera stylizację sekcji tematycznych strony, w tym układ, responsywność, karty projektów oraz efekty dla linków i elementów kontaktowych.
+/// 
+
 @use "../helpers/_variables" as *;
 @use "../helpers/fonts" as *;
 @use "sass:map";

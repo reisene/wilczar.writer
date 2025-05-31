@@ -1,3 +1,11 @@
+/// Wrapper nagłówka – stylizuje całą sekcję nagłówka, tło, ramki i sticky efekt.
+///
+/// @group header
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Zawiera stylizację wrappera nagłówka, efekt sticky, tło z obrazem, ramki SVG oraz responsywność i rozkład elementów.
+/// 
 @use "helpers/variables" as *;
 @use "helpers/fonts" as *;
 
