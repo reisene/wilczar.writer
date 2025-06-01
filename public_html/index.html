@@ -169,24 +169,28 @@
             <section id="projects">
             <h2>Projekty</h2>
                 <ul id="book-list">
-                    <li><a href="book1.html">Książka 1</a></li>
-                    <li><a href="book2.html">Książka 2</a></li>
-                    <li><a href="book3.html">Książka 3</a></li>
+                    <!-- FIXME Na razie ukryte, w razie wydania książki usunąć w scss/section wiersz 'display:none' i tu podmienić linki -->
+                    <li><a href="/books/book1.html">Książka 1</a></li>
+                    <li><a href="/books/book2.html">Książka 2</a></li>
+                    <li><a href="/books/book3.html">Książka 3</a></li>
                 </ul>
-                <article class="project">
+                <article class="project-card">
                     <h3>Pieśń Ostatniego Świtu</h3>
-                    <p>Opowieść o wojowniku, który musi stawić czoła własnej przeszłości, by ocalić przyszłość Larionu.</p>
+                    <p class="aboutp">Epicka powieść fantasy</p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla lectus at odio ornare scelerisque. Mauris risus mauris, fermentum id luctus sed, euismod nec eros. Aliquam enim magna, ornare sit amet venenatis quis, ultricies egestas metus. Phasellus porta risus non vehicula accumsan. In eget bibendum diam. Etiam a augue nec arcu varius dignissim eget et purus. Nam et eros ac leo venenatis congue. Pellentesque viverra, velit id dapibus tincidunt, lorem lorem pulvinar urna, non ultrices justo elit condimentum ligula. Quisque quis congue urna. In hac habitasse platea dictumst. Vestibulum iaculis urna eu risus sodales, quis egestas elit eleifend. Aliquam erat volutpat. Pellentesque tincidunt ligula ullamcorper, auctor felis sit amet, scelerisque purus. Fusce pharetra diam sit amet risus imperdiet temp
-                        Suspendisse tincidunt rutrum sodales. Ut fringilla luctus neque sit amet tincidunt. Nam luctus, nibh vel tempus lacinia, turpis lorem sodales neque, vel commodo dui arcu malesuada mi. Fusce fringilla, eros sit amet maximus vestibulum, ligula elit rhoncus dolor, eget auctor mauris quam ut tortor. Nunc egestas ultrices porta. Integer quis dignissim libero. Nulla facilisi. Suspendisse ut viverra nunc, non ornare odio. Nullam rutrum magna quis leo feugiat, in lobortis velit imperdiet. Nullam nisi erat, consectetur quis vestibulum eu, posuere sit amet risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce at urna mauris. Quisque nibh quam, convallis nec tincidunt at, consectetur ut tortor. Suspendisse potenti. Quisque molestie lacus sit amet ipsum tempus, eu congue odio ullamcorp
-                        Etiam urna dolor, dictum in neque vel, viverra vulputate diam. Morbi rutrum porta convallis. Nulla facilisi. Morbi tincidunt dictum sapien, luctus consectetur dolor fringilla nec. Maecenas lobortis auctor risus. Aenean dapibus turpis ut justo rutrum, vitae consectetur tellus varius. Aenean sit amet placerat massa. Proin eu justo vestibulum, auctor urna ornare, tincidunt velit. Nulla ultricies placerat dolor ac element
-                        Duis dignissim felis ut tortor accumsan sodales. Ut eu elit ut purus dignissim fermentum. Morbi ac purus id quam consectetur viverra. Donec finibus commodo metus, vel euismod metus aliquet consequat. Ut ullamcorper turpis in vehicula tincidunt. Proin sollicitudin vel odio at pulvinar. Etiam eu nisi porta sem lacinia eleifend. Etiam cursus neque in ligula maximus, eget aliquet velit vestibulum. Nullam luctus urna vitae gravida ultrices. Fusce pulvinar dapibus urna. Phasellus ac nulla ac velit viverra tempor vehicula sit amet diam. Mauris eget neque vitae risus pretium consectetur. Aenean consectetur dapibus efficitur. Curabitur sed faucibus el
-                        Suspendisse in magna ac neque cursus eleifend. Morbi rutrum sed lectus et sollicitudin. Curabitur malesuada massa eget commodo efficitur. Cras quis consequat dolor, vitae ornare dui. Nullam facilisis urna risus, a interdum lorem pharetra id. Pellentesque pharetra sapien nibh. Nunc eu sapien eget mi pellentesque viverra.
+                        W świecie Larionu, rozdartego pomiędzy światłem a wszechogarniającą Ciemnością, rozgrywa się opowieść o przeznaczeniu, sile więzi i odwadze w obliczu ostatecznego zagrożenia. Gudrun Aethelyn i Zephyr Eldren, prowadzeni przez tajemnicze moce oraz ciężar własnej przeszłości, wyruszają w podróż, która wystawi ich na próbę zarówno w walce z zewnętrznym złem, jak i z własnymi lękami. „Pieśń Ostatniego Świtu” to historia, która łączy klasyczną epicką przygodę z psychologiczną głębią bohaterów i klimatem mrocznego, wciągającego świata fantasy.
                     </p>
+                    <button class="more">
+                        <a href="/books/book1.html">Więcej...</a> <!--FIXME po wydaniu czegokolwiek, odpowiednio usunąć linijkę w scss/section i zaktualizować link -->
+                    </button>
                 </article>
-                <article>
+                <article class="project-card">
                     <h3>Echo Przeznaczenia</h3>
-                    <p>Historia młodej czarodziejki, która odkrywa swoje przeznaczenie w świecie pełnym intryg i niebezpieczeństw.</p>
+                    <p class="aboutp">Nowela fantasy</p>
+                    <p>Intymna opowieść o wojowniku i cenie, jaką trzeba zapłacić za własne wybory. Zephyr Eldren – paladyn rozdarty między lojalnością, poczuciem obowiązku a pytaniami, których nie da się uciszyć ostrzem miecza – zmuszony jest stanąć twarzą w twarz z własną przeszłością i nieuchronnością przeznaczenia. W cieniu dogasającego ognia i wspomnień, „Echo Przeznaczenia” porusza motyw walki z samym sobą i poszukiwania odpowiedzi, które czasem ranią mocniej niż najgroźniejszy wróg.</p>
+                    <button class="more">
+                        <a href="/books/book2.html">Więcej...</a> <!--FIXME po wydaniu czegokolwiek, odpowiednio usunąć linijkę w scss/section i zaktualizować link -->
+                    </button>
                 </article>
             </section>
             
