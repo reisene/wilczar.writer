@@ -30,27 +30,50 @@
         gap: 2.5px;
     }
 
-    #privary-header {
+    #privacy-header {
         text-align: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        a.pp {
+            text-decoration: none;
+            color: darken($primary-color, 5%);
+            display: inline-flex;
+            transform-origin: center;
+            transition: all 0.3s ease;
+                
+            &:hover {
+                text-shadow: map.get($text-shadow, "light");
+            }
+            @include underline (
+                $color: darken($primary-color,5%),
+                $height: 1.5px,
+                $bottom: 0
+            );
+        }
 
         h2 {
             font-family: "Eagle Lake", cursive;
             font-size: 2.5em;
-            color: #333;
             margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+            @media (max-width:758px) {
+                font-size: 1.75rem;
+            }
         }
 
         p {
-            font-size: 1.2em;
-            color: #666;
             margin: 0;
             padding: 0 20px;
             line-height: 1.5;
+            @media (max-width:768px) {
+                padding: 0;
+            }
         }
 
         .privacy-intro p{
-            margin-top: 20px;
-            font-size: 1.1em;
+            margin:20px 0;
             text-align: center;
             line-height: normal;
 
@@ -58,7 +81,7 @@
             #effective-date, #last-updated {
                 font-style: italic;
                 font-weight: bold;
-                color: #ffd700 !important;
+                color: #ffd700;
             }
         }
     }
@@ -303,22 +326,4 @@
         background-color: darken($primary-color, 10%);
     }
     
-}
-
-.privacy-header a.pp,
-#privacy-header a.pp {
-    text-decoration: none;
-    color: darken($primary-color, 5%);
-    display: inline-flex;
-    transform-origin: center;
-    transition: all 0.3s ease;
-    
-    &:hover {
-        text-shadow: map.get($text-shadow, "light");
-    }
-    @include underline (
-        $color: darken($primary-color,5%),
-        $height: 1.5px,
-        $bottom: 0
-    );
 }
