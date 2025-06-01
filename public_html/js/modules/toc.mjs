@@ -17,79 +17,61 @@
  * initToc();
  */
 
-export function initToc() {
+let tocTimer;
+let toggleButton;
+let tocPanel;
 
-    const toggleButton = document.getElementById("toc-toggle");
-    const tocPanel = document.getElementById("toc-panel");
+const showTOC = () => {
+    tocPanel.classList.add("visible");
+    toggleButton.classList.add("active");
+    clearTimeout(tocTimer);
+    tocTimer = setTimeout(hideTOC, 30000);
+};
 
-    let tocTimer;
+const hideTOC = () => {
+    tocPanel.classList.remove("visible");
+    toggleButton.classList.remove("active");
+    clearTimeout(tocTimer);
+};
 
-    function showTOC() {
-        tocPanel.classList.add("visible");
-        toggleButton.classList.add("active");
-
-        clearTimeout(tocTimer); // reset, jeśli klikniesz kilka razy
-        tocTimer = setTimeout(() => {
-            tocPanel.classList.remove("visible");
-            toggleButton.classList.remove("active");
-        }, 30000); // 30 sekund
-    }
-
-    function hideTOC() {
-        tocPanel.classList.remove("visible");
-        toggleButton.classList.remove("active");
-        clearTimeout(tocTimer);
-    }
-
-    toggleButton.addEventListener("click", (e) => {
-        e.stopPropagation(); // nie wyzwalaj zamknięcia
-        if (tocPanel.classList.contains("visible")) {
-            hideTOC();
-        }
-        else {
-            showTOC();
-        }
+const handleToggleClick = e => {
+    e.stopPropagation();
+    if (tocPanel.classList.contains("visible")) {
+        hideTOC();
+    } else {
         showTOC();
+    }
+};
 
-    });
+const handleDocumentClick = e => {
+    if (!tocPanel.contains(e.target) && e.target !== toggleButton) {
+        hideTOC();
+    }
+};
 
-    document.addEventListener("click", (e) => {
-        if (!tocPanel.contains(e.target) && e.target !== toggleButton) {
-            hideTOC();
-        }
-    });
-    // Obsługa klawiatury
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-            hideTOC();
-        }
-    });
-    // Obsługa dotyku
-    tocPanel.addEventListener("touchstart", (e) => {
-        e.stopPropagation(); // zapobiegaj zamknięciu przy dotyku
-    });
-    // Obsługa zmiany rozmiaru okna
-    window.addEventListener("resize", () => {
-        if (tocPanel.classList.contains("visible")) {
-            hideTOC();
-        }
-    });
-    // Obsługa przewijania
-    window.addEventListener("scroll", () => {
-        if (tocPanel.classList.contains("visible")) {
-            hideTOC();
-        }
-    });
-    // Obsługa klikania w linki w panelu TOC
-    tocPanel.addEventListener("click", (e) => {
-        if (e.target.tagName === "A") {
-            hideTOC();
-        }
-    });
-    
-    // Obsługa przewijania do sekcji po kliknięciu w link
+const handleKeydown = e => {
+    if (e.key === "Escape") hideTOC();
+};
+
+const handleTouchStart = e => {
+    e.stopPropagation();
+};
+
+const handleResize = () => {
+    if (tocPanel.classList.contains("visible")) hideTOC();
+};
+
+const handleScroll = () => {
+    if (tocPanel.classList.contains("visible")) hideTOC();
+};
+
+const handleTocLinkClick = e => {
+    if (e.target.tagName === "A") hideTOC();
+};
+
+const setupSmoothScrollLinks = () => {
     tocPanel.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", (e) => {
+        link.addEventListener("click", e => {
             e.preventDefault();
             const targetId = link.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
@@ -99,5 +81,17 @@ export function initToc() {
             }
         });
     });
+};
 
+export function initToc() {
+    toggleButton = document.getElementById("toc-toggle");
+    tocPanel = document.getElementById("toc-panel");
+    toggleButton.addEventListener("click", handleToggleClick);
+    document.addEventListener("click", handleDocumentClick);
+    document.addEventListener("keydown", handleKeydown);
+    tocPanel.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+    tocPanel.addEventListener("click", handleTocLinkClick);
+    setupSmoothScrollLinks();
 }

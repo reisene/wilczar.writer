@@ -83,6 +83,8 @@
     main {
         flex-direction: column;
         gap: 15px;
+        padding-bottom: 25px;
+        margin-bottom: 10px;
         section {
             flex: none;
             width: 100%;
@@ -154,6 +156,7 @@
     #privacy-policy .privacy-content {
         padding: 0;
         margin: 0 auto;
+        padding-bottom: 10px;
         ol {
             padding-left: 1rem; /* lub mniej/mocniej wcięte */
         }

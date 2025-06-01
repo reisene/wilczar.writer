@@ -15,9 +15,20 @@
 // Privacy Policy Styles
 
 #privacy-policy{
-    background-color: #f0f0f0;
-    padding: 20px;
+    background: 
+        linear-gradient(rgba(240, 240, 240, 0.05), rgba(240, 240, 240, 0.05)),
+        url(/img/shley-tree-2.png);
+    backdrop-filter: blur(6px);
+    padding: 10px;
+    border: 1px solid rgba(240, 240, 240, 0.02);
     border-radius: 8px;
+
+    gap: 5px;
+
+    @media (max-width: 768px) {
+        padding: 5px;
+        gap: 2.5px;
+    }
 
     #privary-header {
         text-align: center;
@@ -80,6 +91,9 @@
             width: 80%;
             text-align: justify;
             list-style-type: upper-roman;
+            @media (max-width: 768px) {
+                width:70%;
+            }
             
             li {
                 margin-bottom: 10px;
@@ -194,6 +208,11 @@
         color: #000;
         font-size: 1.5rem;
         padding: 0.6rem 1rem;
+        @media (max-width: 768px){
+            padding: 0.2rem 0.5rem;
+            padding-right: 0.3rem;
+            font-size: 1rem;
+        }
         cursor: pointer;
         border-radius: 50% 0 0 50%;
         transition: all 0.3s ease;
