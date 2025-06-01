@@ -29,10 +29,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        gap:0;
+        padding:0;
+    }
 
     #book-list{
         display: flex;
+        display: none; // FIXME Jeśli wydam jakąś książkę, usunąć ten wiersz
         flex-direction: wrap;
         gap: 10px;
         margin: 0 auto;
@@ -47,12 +53,65 @@
     }
 
     .project-card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
         background-color: #2e2e2e;
+        background-image: url('/img/paper-3.png');
         border-radius: 10px;
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        width: calc(33% - 40px);
+        width: calc(33% - 1.5rem);
         margin: 10px;
+
+        .aboutp {
+            font-style: italic;
+            text-align: center;
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .more {
+            display: none; // FIXME jak wydam książki, to usunąć tą linijkę
+            margin-top: auto;
+            align-self: flex-start;
+            align-items: center;
+            margin-top: auto;
+            justify-content: center;
+            padding: 5px 15px;
+            border-radius: 2rem;
+            background-color: #2e2e2e;
+            border: 2px solid rgba(46, 46, 46, 0.5);
+            transition: all 0.3 ease;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);;
+            a{
+                text-decoration: none;
+                color: $primary-color;
+            }
+
+            &:hover{
+                background-color: $primary-color;
+                border: 2px solid $secondary-color;
+                transform: scale(1.1);
+                a{
+                    color: #2e2e2e;
+                }
+            }
+        }
+
+        @media (max-width:768px) {
+            padding: 15px;
+            margin: 0;
+            width: 100%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            .more {
+                align-self: center;
+                margin: 0 auto;
+                a {
+                    font-size: 0.9em;
+                }
+            }
+        }
     }
 }
 

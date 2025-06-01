@@ -22,6 +22,7 @@ let toggleButton;
 let tocPanel;
 
 const showTOC = () => {
+    tocPanel.classList.remove('hidden');
     tocPanel.classList.add("visible");
     toggleButton.classList.add("active");
     clearTimeout(tocTimer);
@@ -30,6 +31,7 @@ const showTOC = () => {
 
 const hideTOC = () => {
     tocPanel.classList.remove("visible");
+    tocPanel.classList.add('hidden')
     toggleButton.classList.remove("active");
     clearTimeout(tocTimer);
 };

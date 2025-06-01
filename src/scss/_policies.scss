@@ -253,7 +253,6 @@
         backdrop-filter: blur(10px);
         border-left: 4px solid #ffd700;
         font-size: 1rem;
-        opacity: 0;
         transition: all 0.3s ease;
         position: absolute;
         top: 50%;
@@ -263,7 +262,6 @@
         box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         align-items: center;
-
         h2 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
@@ -317,10 +315,19 @@
     }
     
     #toc-panel.visible {
-        opacity: 1;
         border-right: 4px solid darken(#ffd700, 10%);
-        box-shadow: none;
+        display: block;
+        pointer-events: auto;
+        opacity: 1;
     }
+
+    #toc-panel.hidden {
+        border-right: 4px solid darken(#ffd700, 10%);
+        display: none;
+        pointer-events: none;
+        opacity: 0;
+    }
+
     #toc-toggle.active {
         border-radius: 5px 0 0 5px;
         background-color: darken($primary-color, 10%);
