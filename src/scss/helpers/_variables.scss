@@ -1,3 +1,11 @@
+/// Zmienne globalne projektu: kolory, cienie, motywy, tło nagłówka.
+///
+/// @group helpers
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Zawiera definicje kolorów podstawowych, dodatkowych, cieni tekstu oraz mapę kolorów motywu i tła nagłówka.
+/// 
 @use "sass:map";
 
 $primary-color: rgb(255, 215, 0);

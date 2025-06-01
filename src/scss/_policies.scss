@@ -1,0 +1,329 @@
+/// Style stron polityk (polityka prywatności, RODO, spis treści).
+///
+/// @group policies
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Zawiera stylizację sekcji polityk, nagłówków, treści, linków, efektów hover oraz panelu spisu treści (TOC).
+/// 
+
+@use "helpers/variables" as *;
+@use "helpers/fonts" as *;
+@use "helpers/mixins" as *;
+@use "sass:map";
+
+// Privacy Policy Styles
+
+#privacy-policy{
+    background: 
+        linear-gradient(rgba(240, 240, 240, 0.05), rgba(240, 240, 240, 0.05)),
+        url(/img/shley-tree-2.png);
+    backdrop-filter: blur(6px);
+    padding: 10px;
+    border: 1px solid rgba(240, 240, 240, 0.02);
+    border-radius: 8px;
+
+    gap: 5px;
+
+    @media (max-width: 768px) {
+        padding: 5px;
+        gap: 2.5px;
+    }
+
+    #privacy-header {
+        text-align: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        a.pp {
+            text-decoration: none;
+            color: darken($primary-color, 5%);
+            display: inline-flex;
+            transform-origin: center;
+            transition: all 0.3s ease;
+                
+            &:hover {
+                text-shadow: map.get($text-shadow, "light");
+            }
+            @include underline (
+                $color: darken($primary-color,5%),
+                $height: 1.5px,
+                $bottom: 0
+            );
+        }
+
+        h2 {
+            font-family: "Eagle Lake", cursive;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+            @media (max-width:758px) {
+                font-size: 1.75rem;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.5;
+            @media (max-width:768px) {
+                padding: 0;
+            }
+        }
+
+        .privacy-intro p{
+            margin:20px 0;
+            text-align: center;
+            line-height: normal;
+
+
+            #effective-date, #last-updated {
+                font-style: italic;
+                font-weight: bold;
+                color: #ffd700;
+            }
+        }
+    }
+    .privacy-content {
+        padding: 0 20px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+
+            #render{
+                font-weight: 600;
+                text-decoration: none;
+                color: inherit;
+                transition: color 0.3s ease;
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .I {
+            margin: 0 auto;
+            padding: 0 10px;
+            width: 80%;
+            text-align: justify;
+            list-style-type: upper-roman;
+            @media (max-width: 768px) {
+                width:70%;
+            }
+            
+            li {
+                margin-bottom: 10px;
+                list-style-position: inside;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            h3{
+                font-size: 1.8em;
+                margin-top: 10px;
+                color: darken(#ffd700, 10%);
+                font-weight: bold;
+                font-variant: small-caps;
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        
+        
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+
+            li {
+                a {
+                    color: $primary-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $secondary-color; /* Slightly brighter gold */
+                        text-decoration: underline;
+                        transition: color 0.3s ease;
+                    }
+                }
+            }
+        }
+
+        ol li a {
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $secondary-color; /* Slightly brighter gold */
+                text-decoration: underline;
+                transition: color 0.3s ease;
+            }
+        }
+
+        #rodo-info {
+            margin-top: 20px;
+            a {
+                text-decoration: none;
+                color: darken($primary-color, 5%);
+                display: inline-flex;
+                transform-origin: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    text-shadow: map.get($text-shadow, "light");
+                    transform: scale(1.02);
+                }
+                @include underline (
+                    $color: darken($primary-color,5%),
+                    $height: 1.5px,
+                    $bottom: 0
+                );
+            }
+
+            h3 {
+                font-size: 1.5em;
+                color: darken(#ffd700, 10%);
+                margin-bottom: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            p {
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+
+            ul li > ul {
+                list-style-type: circle;
+                padding-left: 20px;
+
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+#floating-toc{
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2000;
+
+    #toc-toggle {
+        background-color: $primary-color;
+        border: none;
+        color: #000;
+        font-size: 1.5rem;
+        padding: 0.6rem 1rem;
+        @media (max-width: 768px){
+            padding: 0.2rem 0.5rem;
+            padding-right: 0.3rem;
+            font-size: 1rem;
+        }
+        cursor: pointer;
+        border-radius: 50% 0 0 50%;
+        transition: all 0.3s ease;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+        &:hover {
+            background-color: darken($primary-color, 10%);
+            color: #fff;
+        }
+    }
+
+    .toc#toc-panel {
+        padding: 1rem;
+        padding-right: 0;
+        background-color: rgba(130, 130, 130, 0.9);
+        backdrop-filter: blur(10px);
+        border-left: 4px solid #ffd700;
+        font-size: 1rem;
+        opacity: 0;
+        transition: all 0.3s ease;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 100%;
+        width: 300px;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        align-items: center;
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.8rem;
+            max-height: 70vh;
+            overflow-y: auto;
+            padding-right: 5px;
+            scroll-behavior: smooth;
+            scrollbar-gutter: stable;
+            scrollbar-color: transparent transparent;
+
+            &:hover {
+                scrollbar-color: rgba(100, 100, 100, 0.7) transparent;
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgba(100, 100, 100, 0.7);
+                }
+            }
+
+            &::-webkit-scrollbar{
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+                border-radius: 4px;
+            }
+
+            li {
+                margin-bottom: 0.6rem;
+                border-bottom: #ffd700 1px solid;
+                padding-bottom: 0.5rem;
+            }
+
+            a {
+                color: #ffd700;
+                text-decoration: none;
+                transition: all 0.3s;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: darken(#ffd700, 10%);
+                }
+            }
+        } 
+    }
+    
+    #toc-panel.visible {
+        opacity: 1;
+        border-right: 4px solid darken(#ffd700, 10%);
+        box-shadow: none;
+    }
+    #toc-toggle.active {
+        border-radius: 5px 0 0 5px;
+        background-color: darken($primary-color, 10%);
+    }
+    
+}

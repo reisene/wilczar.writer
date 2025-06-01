@@ -1,23 +1,30 @@
+/// Style nawigacji głównej strony (#menu).
+///
+/// @group header
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Odpowiada za wygląd, układ i efekty interakcji menu nawigacyjnego, w tym podkreślenia i animacje linków.
+/// 
 @use "../helpers/variables" as *;
 @use "../helpers/fonts" as *;
+@use "../helpers/mixins" as *;
 @use "sass:map";
 
 /* Navigation Styles */
 #menu {
     font-family: $header-font;
-    display: block;
-    position: sticky;
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-    top: 0;
-    z-index: 1000;
     padding: 0 !important;
+    margin-bottom: 0;
+
     ul {
         position: relative;
         background-color: rgba(51, 51, 51, 0.7);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(10px);
         border-radius: 8px;
         box-shadow: 0 0 10px #000;
         justify-content: center;
@@ -48,21 +55,11 @@
                     font-weight: 600;
                     transform: scale(1.05);
                 }
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 5px;
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    background-color: $primary-color;
-                    transform: scaleX(0);
-                    transform-origin: left;
-                    transition: transform 0.3s ease;
-                }
-                &:hover::after {
-                    transform: scaleX(1);
-                }
+                @include underline (
+                    $color: $primary-color,
+                    $height: 2px,
+                    $bottom: 5px
+                )
             }
         }
     }

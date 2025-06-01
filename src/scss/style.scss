@@ -1,11 +1,21 @@
-@use "_reset.scss";
+/// Główny plik SCSS importujący wszystkie style projektu.
+///
+/// @group core
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Łączy resety, layout, nagłówek, sekcje, polityki, stopkę i style responsywne w jeden arkusz.
+/// 
+@use "body/_reset.scss";
 
 @use "header-wrapper.scss";
 
-@use "_main.scss";
+@use "body/_main.scss";
 
-@use "_section.scss";
+@use "body/_section.scss";
 
-@use "_footer.scss";
+@use "_policies.scss";
+
+@use "body/_footer.scss";
 
 @use "_media.scss";

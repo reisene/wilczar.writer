@@ -1,0 +1,41 @@
+/// Resetuje domyślne style przeglądarki i ustawia podstawowe wartości globalne.
+/// 
+/// @group reset
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Resetuje marginesy, padding, box-sizing oraz ustawia bazowy kolor tła, kolor tekstu i font dla całej strony.
+/// Umożliwia spójny wygląd na wszystkich przeglądarkach.
+/// 
+/// @example scss
+///   * {
+///     margin: 0;
+///     padding: 0;
+///     box-sizing: border-box;
+///   }
+///
+
+@use "../helpers/variables" as *;
+@use "../helpers/fonts" as *;
+@use "sass:map";
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; // Base font size
+}
+
+
+body {
+    font-family: $body-font;
+    background-color: #1e1e1e;
+    color: $body-color;
+    line-height: 1.6;
+    
+}

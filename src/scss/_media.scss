@@ -1,3 +1,12 @@
+/// Media queries i style responsywne dla całego projektu.
+///
+/// @group media
+/// @author AKNETH Studio Katarzyna Pawłowska-Malesa
+/// @date 2025-06-01
+/// @description
+/// Zawiera reguły dostosowujące układ, typografię i elementy interfejsu do urządzeń mobilnych i mniejszych ekranów.
+/// 
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     body {
@@ -5,48 +14,78 @@
         padding: 0 7.5px;
     }
 
+    #header-social {
+        display: none;
+    }
+
     #header-wrapper {
         margin-top: 7.5px;
-        .header-social {
-            display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        header#main-header,
+        #menu {
+            flex: none;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
-        header {
-            padding: 30px 0;
+        #menu {
+            margin-top: 20px;
+            ul {
+                padding: 0 10px;
+                margin: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                li {
+                    margin: 5px 0;
+                    a {
+                        .menu-label {
+                            display: none;
+                        }
+                        min-width: auto;
+                        justify-content: center;
+                        padding: 10px 5px;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+
+        header#main-header {
+            padding: 10px 0;
+            
             .header-content {
                 padding: 10px 20px;
                 h1 {
                     font-size: 2.5em;
+                    text-align: center;
                 }
                 p {
                     font-size: 1.2em;
                 }
             }
+            
         }
     }
 
-    #menu {
-        margin-top: 20px;
-        ul {
-            padding: 0 10px;
-            margin: 0;
-            li {
-                margin: 5px 0;
-                a {
-                    .menu-label {
-                        display: none;
-                    }
-                    min-width: auto;
-                    justify-content: center;
-                    padding: 10px 5px;
-                    font-size: 1.2em;
-                }
-            }
+    #header-wrapper.is-sticky {
+        min-height: 20px;
+        padding: 5px 0;
+        header#main-header {
+            display: none;
         }
     }
+
     main {
         flex-direction: column;
         gap: 15px;
+        padding-bottom: 25px;
+        margin: 0 2vw;
+        margin-bottom: 10px;
         section {
             flex: none;
             width: 100%;
@@ -114,5 +153,45 @@
                 font-size: 0.75em;
             }
         }
+    }
+    #privacy-policy .privacy-content {
+        padding: 0;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        ol {
+            padding-left: 1rem; /* lub mniej/mocniej wcięte */
+        }
+
+        ol > li {
+            margin-left: 0.5rem;
+        }
+        ul {
+            padding-left: 1rem; /* lub mniej/mocniej wcięte */
+        }
+        ul > li {
+            margin-left: 0.5rem;
+        }
+        ol.I {
+            width: 95%;
+            padding: 0;
+            margin: 0 auto;
+            justify-content: center;
+            line-break: auto;
+            li {
+                margin: 5px auto;
+                padding: 0 10px;
+                font-size: 0.8rem;
+                ol li{
+                    list-style-position: inside;
+                }
+            }
+        }
+    }
+    footer{
+        padding: 20px 0;
+        p#copyright {
+            font-size: 0.75rem;
+        }
+
     }
 }
