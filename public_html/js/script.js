@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (
         path.includes("/policies/privacy.html") ||
-        path.includes("/policies/rodo.html")
+        path.includes("/policies/rodo.html") ||
+        path.includes("/policies/terms.html")
     ) {
         try{
             initToc();
