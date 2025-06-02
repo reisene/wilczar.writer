@@ -3,19 +3,31 @@
 	<url>
 		<loc>https://katarzyna-wilczar-writer.onrender.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-06-01</lastmod>
-		<changefreq>weekly</changefreq>
+		<lastmod>2025-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://katarzyna-wilczar-writer.onrender.com/news.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2025-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://katarzyna-wilczar-writer.onrender.com/policies/terms.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-06-02</lastmod>
 	</url>
 	<url>
 		<loc>https://katarzyna-wilczar-writer.onrender.com/policies/rodo.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2025-06-01</lastmod>
-		<changefreq>yearly</changefreq>
+		<lastmod>2025-06-02</lastmod>
 	</url>
 	<url>
 		<loc>https://katarzyna-wilczar-writer.onrender.com/policies/privacy.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2025-06-01</lastmod>
-		<changefreq>yearly</changefreq>
+		<lastmod>2025-06-02</lastmod>
+	</url>
+	<url>
+		<loc>https://katarzyna-wilczar-writer.onrender.com/news/2025-06-01-post1.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-06-02</lastmod>
 	</url>
 </urlset>

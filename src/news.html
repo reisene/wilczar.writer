@@ -4,6 +4,7 @@
         <title>Aktualności - Katarzyna Wiłczar</title>
 
         @@include('head.html')
+        <script src="/js/news.js"></script>
 
     </head>
     <body>
@@ -12,9 +13,101 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
-        @@include('header.html')
+        <div id="header-social">
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/akneth.writer" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/akneth_writer/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@akneth_writer" target="_blank">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://discord.com/users/424982018359558156" target="_blank">
+                        <i class="bi bi-discord"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="support-icons">
+                <li>
+                    <a href="https://buycoffee.to/katarzyna.wilczar" target="_blank">
+                        <img src="https://buycoffee.to/img/share-button-dark.png" style="width: 136px; height: 35px" alt="Postaw mi kawę na buycoffee.to">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-wrapper" id="header-wrapper">
+            <header id="main-header" role="banner">
+                <div class ="header-content">
+                    <h1>Katarzyna Wiłczar</h1>
+                    <p>Strona autorska</p>
+                </div>
+                
+            </header>
+            <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="/" title="Strona główna">
+                                <i class="bi bi-house-door"></i>
+                                <span class="menu-label">Strona Główna</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html/#about" title="O mnie">
+                                <i class="bi bi-person"></i>
+                                <span class="menu-label">O mnie</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html/#projects" title="Projekty">
+                                <i class="bi bi-journal-text"></i>
+                                <span class="menu-label">Projekty</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html/#contact" title="Kontakt">
+                                <i class="bi bi-envelope"></i>
+                                <span class="menu-label">Kontakt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/news.html" title="Aktualności">
+                                <i class="bi bi-newspaper"></i>
+                                <span class="menu-label">Aktualności</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
 
         <main id="news">
+
+            <section id="news-header">
+
+                <h2>Aktualności</h2>
+                <div id="news-wrapper"></div>
+
+            </section>
+
+            <section id="social-news">
+                <h2>Social News</h2>
+                <div id="feed">
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@akneth_writer" data-unique-id="akneth_writer" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@akneth_writer?refer=creator_embed">@akneth_writer</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
+                    <iframe id="fb-1" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fakneth.writer&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=440562218943519" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+                    <iframe id="fb-2" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fakneth.writer&tabs=timeline&width=300&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=440562218943519" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                
+            </section>
 
         </main>
 
