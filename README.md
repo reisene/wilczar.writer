@@ -62,7 +62,7 @@ Social media wyłącznie do śledzenia:
 
 ## Licencja
 
-https://img.shields.io/github/license/reisene/wilczar.writer.svg
+![LICENSE](https://img.shields.io/github/license/reisene/wilczar.writer.svg)
 
 Kod źródłowy tego projektu (wszystko, co znajduje się w katalogach /js, /css, /scss oraz pliki konfiguracyjne) udostępniany jest na licencji MIT.
 
