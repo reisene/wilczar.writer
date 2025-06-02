@@ -86,6 +86,7 @@
         var tocTimer;
         if (!toggleButton || !tocPanel) return;
         function showTOC() {
+            tocPanel.classList.remove('hidden');
             tocPanel.classList.add('visible');
             toggleButton.classList.add('active');
             clearTimeout(tocTimer);
@@ -93,6 +94,7 @@
         }
         function hideTOC() {
             tocPanel.classList.remove('visible');
+            tocPanel.classList.add('hidden');
             toggleButton.classList.remove('active');
             clearTimeout(tocTimer);
         }
@@ -145,7 +147,7 @@
         initFooterButton();
         enableSmoothScroll();
         var path = window.location.pathname;
-        if (path.indexOf('/policies/privacy.html') !== -1 || path.indexOf('/policies/rodo.html') !== -1) {
+        if (path.indexOf('/policies/privacy.html') !== -1 || path.indexOf('/policies/rodo.html') !== -1 || path.indexOf('/policies/terms.html') !== -1) {
             try {
                 initToc();
             } catch (error) {

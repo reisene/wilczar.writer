@@ -15,6 +15,11 @@
 // Privacy Policy Styles
 
 #privacy-policy{
+    .privacy-intro{
+        justify-content:left;
+        margin-top: 0;
+        font-size: 0.85rem;
+    }
     background: 
         linear-gradient(rgba(240, 240, 240, 0.05), rgba(240, 240, 240, 0.05)),
         url(/img/shley-tree-2.png);
@@ -31,8 +36,7 @@
     }
 
     #privacy-header {
-        text-align: center;
-        justify-content: center;
+        
         font-family: Arial, Helvetica, sans-serif;
     
         a.pp {
@@ -74,7 +78,6 @@
 
         .privacy-intro p{
             margin:20px 0;
-            text-align: center;
             line-height: normal;
 
 
@@ -262,6 +265,8 @@
         box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         align-items: center;
+        align-content: center;
+        align-self: center;
         h2 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
@@ -333,4 +338,43 @@
         background-color: darken($primary-color, 10%);
     }
     
+}
+
+.terms {
+    h2{
+        margin: 0 auto;
+    }
+    .temrsofservice {
+        font-family: Arial, Helvetica, sans-serif;
+        h3{
+            font-family: inherit;
+        }
+        a{
+            color: $primary-color;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover {
+                text-shadow: map.get($text-shadow, "light");
+                text-decoration: underline;
+            }
+        }
+        @media (max-width: 768px) {
+            width:fit-content;
+            margin: 0 auto;
+            h3{
+                text-align: left;
+            }
+        }
+        ol {
+            list-style-position:initial;
+            li {
+                ul {
+                    list-style-type:disc;
+                    ul{
+                        list-style-type:circle;
+                    }
+                }
+            }
+        }
+    }
 }
