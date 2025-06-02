@@ -85,6 +85,13 @@
     #menu ul {
         background-color: rgba(215, 215, 215, 0.25);
         backdrop-filter: blur(20px);
+        a{
+            min-width: none;
+            .menu-label {
+                display: none;
+            
+            }
+        }
     }
 }
 
