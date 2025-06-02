@@ -17,7 +17,7 @@ Strona prezentuje autorską twórczość, projekty i publikacje Katarzyny Wiłcz
 ## Technologie
 
 - HTML5 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) 
-- SCSS (kompilowany do CSS) [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#) 
+- SCSS (kompilowany do CSS) [![Sass](https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff)](#) [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#) 
 - JavaScript ES Modules (modularny kod) [![EJS](https://img.shields.io/badge/EJS-B4CA65?logo=ejs&logoColor=fff)](#)
 - Bootstrap 5 (wybrane komponenty) [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)](#)
 - Google Tag Manager (analityka)
