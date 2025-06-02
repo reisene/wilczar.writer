@@ -9,8 +9,6 @@ jobs:
       contents: read
       pull-requests: write
       labels: write
-      issues: write
-      checks: write
     
     steps:
     - id: Checkout
