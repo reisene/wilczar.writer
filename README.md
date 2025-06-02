@@ -1,8 +1,14 @@
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/reisene/wilczar.writer?utm_source=oss&utm_medium=github&utm_campaign=reisene%2Fwilczar.writer&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews) [![Snyk](https://img.shields.io/badge/Snyk-4C4A73?logo=snyk&logoColor=fff)](#)
+
+[![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#) [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)
+
+![GitHub Copilot](https://img.shields.io/badge/github_copilot-8957E5?style=plastic&logo=github-copilot&logoColor=white) ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=plastic&logo=openai&logoColor=white) ![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=plastic&logo=Opera&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white) ![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=plastic&logo=gimp&logoColor=FFFFFF)
+
 # Katarzyna Wiłczar — Strona autorska
 
 Oficjalna strona internetowa autorki fantasy — **Katarzyny Wiłczar**  
 Projekt realizowany przez: **Akneth Studio Katarzyna Pawłowska-Malesa (NDG)**  
-Deploy: [onrender.com](https://katarzyna-wilczar-writer.onrender.com)
+Deploy: [onrender.com](https://katarzyna-wilczar-writer.onrender.com) https://img.shields.io/website-up-down-green-red/http/katarzyna-wilczar-writer.onrender.com.svg
 
 ## O projekcie
 
@@ -10,11 +16,12 @@ Strona prezentuje autorską twórczość, projekty i publikacje Katarzyny Wiłcz
 
 ## Technologie
 
-- HTML5, SCSS (kompilowany do CSS)
-- JavaScript ES Modules (modularny kod)
-- Bootstrap 5 (wybrane komponenty)
+- HTML5 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) 
+- SCSS (kompilowany do CSS) [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#) 
+- JavaScript ES Modules (modularny kod) [![EJS](https://img.shields.io/badge/EJS-B4CA65?logo=ejs&logoColor=fff)](#)
+- Bootstrap 5 (wybrane komponenty) [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)](#)
 - Google Tag Manager (analityka)
-- Render (hosting)
+- Render (hosting) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=plastic&logo=render&logoColor=white)
 - Open Graph / Twitter Cards (SEO/social sharing)
 
 ## Funkcjonalności
@@ -28,12 +35,13 @@ Strona prezentuje autorską twórczość, projekty i publikacje Katarzyny Wiłcz
 - Wsparcie BuyCoffee.to
 
 ## Instalacja / Rozwój lokalny
-
 1. Sklonuj repozytorium:
+   [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
     ```bash
     git clone https://github.com/wilczar.writer.git
     ```
 2. Zainstaluj zależności:
+   [![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)](#)
     ```bash
     npm install
     ```
@@ -48,11 +56,13 @@ Oficjalny kontakt w sprawach strony/projektu:
 
 Social media wyłącznie do śledzenia:
 
-- [Instagram](https://www.instagram.com/akneth_writer/)
-- [Facebook](https://www.facebook.com/akneth.writer)
-- [TikTok](https://www.tiktok.com/@akneth_writer)
+- ![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=plastic&logo=Instagram&logoColor=white) [Instagram](https://www.instagram.com/akneth_writer/)
+- ![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=plastic&logo=Facebook&logoColor=white) [Facebook](https://www.facebook.com/akneth.writer)
+- ![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?style=plastic&logo=TikTok&logoColor=white) [TikTok](https://www.tiktok.com/@akneth_writer)
 
 ## Licencja
+
+https://img.shields.io/github/license/reisene/wilczar.writer.svg
 
 Kod źródłowy tego projektu (wszystko, co znajduje się w katalogach /js, /css, /scss oraz pliki konfiguracyjne) udostępniany jest na licencji MIT.
 
@@ -61,5 +71,5 @@ Treści autorskie, takie jak teksty, opisy projektów, dane, publikacje oraz wsz
 Grafiki w tym projekcie zostały wygenerowane z pomocą narzędzi AI. Ich wykorzystanie poza repozytorium może podlegać dodatkowym warunkom licencyjnym.
 
 **Kontakt w sprawach prawnych i komercyjnych:**  
-akneth.studio@gmail.com
+![Gmail](https://img.shields.io/badge/Gmail-D14836?style=plastic&logo=gmail&logoColor=white)  akneth.studio@gmail.com
 
