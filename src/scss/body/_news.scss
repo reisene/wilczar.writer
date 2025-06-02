@@ -1,0 +1,40 @@
+#news{
+    #social-news {
+        min-width: 1000px;
+        margin: 0 auto;
+        justify-content: center;
+
+        #feed{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            .tiktok-embed {
+                flex: 1;
+            }
+            iframe {
+                flex:1;
+            }
+            #fb-2{
+                display: none;
+            }
+        }
+        @media (max-width: 768px) {
+            min-width: auto;
+            #feed{
+                flex-direction: column;
+                align-items: center;
+                min-height: 700px;
+                gap:0;
+                #fb-1{
+                    display: none;
+                }
+                #fb-2{
+                    display: block;
+                }
+            }
+        }
+    }
+}
