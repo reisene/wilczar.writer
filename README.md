@@ -2,7 +2,7 @@
 
 [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#) [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)
 
-![GitHub Copilot](https://img.shields.io/badge/github_copilot-8957E5?style=plastic&logo=github-copilot&logoColor=white)ChatGPT ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=plastic&logo=openai&logoColor=white) ![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=plastic&logo=Opera&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white) ![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=plastic&logo=gimp&logoColor=FFFFFF)
+![GitHub Copilot](https://img.shields.io/badge/github_copilot-8957E5?style=plastic&logo=github-copilot&logoColor=white) ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=plastic&logo=openai&logoColor=white) ![Opera](https://img.shields.io/badge/Opera-FF1B2D?style=plastic&logo=Opera&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white) ![Gimp Gnu Image Manipulation Program](https://img.shields.io/badge/Gimp-657D8B?style=plastic&logo=gimp&logoColor=FFFFFF)
 
 # Katarzyna Wiłczar — Strona autorska
 
