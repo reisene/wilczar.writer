@@ -8,7 +8,7 @@
 
 Oficjalna strona internetowa autorki fantasy — **Katarzyny Wiłczar**  
 Projekt realizowany przez: **Akneth Studio Katarzyna Pawłowska-Malesa (NDG)**  
-Deploy: [onrender.com](https://katarzyna-wilczar-writer.onrender.com)
+Deploy: [onrender.com](https://katarzyna-wilczar-writer.onrender.com) https://img.shields.io/website-up-down-green-red/http/katarzyna-wilczar-writer.onrender.com.svg
 
 ## O projekcie
 
@@ -61,6 +61,8 @@ Social media wyłącznie do śledzenia:
 - ![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?style=plastic&logo=TikTok&logoColor=white) [TikTok](https://www.tiktok.com/@akneth_writer)
 
 ## Licencja
+
+https://img.shields.io/github/license/reisene/wilczar.writer.svg
 
 Kod źródłowy tego projektu (wszystko, co znajduje się w katalogach /js, /css, /scss oraz pliki konfiguracyjne) udostępniany jest na licencji MIT.
 
