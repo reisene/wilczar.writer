@@ -8,7 +8,9 @@
 
 Oficjalna strona internetowa autorki fantasy — **Katarzyny Wiłczar**  
 Projekt realizowany przez: **Akneth Studio Katarzyna Pawłowska-Malesa (NDG)**  
-Deploy: [onrender.com](https://katarzyna-wilczar-writer.onrender.com) https://img.shields.io/website-up-down-green-red/http/katarzyna-wilczar-writer.onrender.com.svg
+Deploy: [onrender.com](https://katarzyna-wilczar-writer.onrender.com) ![Render](https://img.shields.io/website-up-down-green-red/http/katarzyna-wilczar-writer.onrender.com.svg)
+
+[![Repo Updated Badge](https://badges.strrl.dev/updated/${owner}/${repo})](https://badges.strrl.dev)
 
 ## O projekcie
 
@@ -16,12 +18,12 @@ Strona prezentuje autorską twórczość, projekty i publikacje Katarzyny Wiłcz
 
 ## Technologie
 
-- HTML5 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) 
-- SCSS (kompilowany do CSS) [![Sass](https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff)](#) [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#) 
-- JavaScript ES Modules (modularny kod) [![EJS](https://img.shields.io/badge/EJS-B4CA65?logo=ejs&logoColor=fff)](#)
-- Bootstrap 5 (wybrane komponenty) [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)](#)
+- HTML5 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)]([#](https://developer.mozilla.org/en-US/docs/Web/HTML)) 
+- SCSS (kompilowany do CSS) [![Sass](https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff)]([#](https://sass-lang.com/)) [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)]([#](https://developer.mozilla.org/en-US/docs/Web/CSS)) 
+- JavaScript ES Modules (modularny kod) [![JS](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E)]([#](https://developer.mozilla.org/en-US/docs/Web/JavaScript))
+- Bootstrap 5 (wybrane komponenty) [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)](https://getbootstrap.com/)
 - Google Tag Manager (analityka)
-- Render (hosting) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=plastic&logo=render&logoColor=white)
+- Render (hosting) [![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=plastic&logo=render&logoColor=white)](https://render.com/)
 - Open Graph / Twitter Cards (SEO/social sharing)
 
 ## Funkcjonalności
@@ -36,12 +38,12 @@ Strona prezentuje autorską twórczość, projekty i publikacje Katarzyny Wiłcz
 
 ## Instalacja / Rozwój lokalny
 1. Sklonuj repozytorium:
-   [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
+   [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](https://git-scm.com/)
     ```bash
     git clone https://github.com/wilczar.writer.git
     ```
 2. Zainstaluj zależności:
-   [![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)](#)
+   [![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)]([#](https://www.npmjs.com/))
     ```bash
     npm install
     ```
@@ -56,9 +58,9 @@ Oficjalny kontakt w sprawach strony/projektu:
 
 Social media wyłącznie do śledzenia:
 
-- ![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=plastic&logo=Instagram&logoColor=white) [Instagram](https://www.instagram.com/akneth_writer/)
-- ![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=plastic&logo=Facebook&logoColor=white) [Facebook](https://www.facebook.com/akneth.writer)
-- ![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?style=plastic&logo=TikTok&logoColor=white) [TikTok](https://www.tiktok.com/@akneth_writer)
+- [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=plastic&logo=Instagram&logoColor=white)](https://www.instagram.com/akneth_writer/) [akneth_writer](https://www.instagram.com/akneth_writer/)
+- [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=plastic&logo=Facebook&logoColor=white)](https://www.facebook.com/akneth.writer) [akneth.writer](https://www.facebook.com/akneth.writer)
+- [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?style=plastic&logo=TikTok&logoColor=white)](https://www.tiktok.com/@akneth_writer) [@akneth_writer](https://www.tiktok.com/@akneth_writer)
 
 ## Licencja
 
