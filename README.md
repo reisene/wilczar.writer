@@ -10,7 +10,7 @@ Oficjalna strona internetowa autorki fantasy — **Katarzyny Wiłczar**
 Projekt realizowany przez: **Akneth Studio Katarzyna Pawłowska-Malesa (NDG)**  
 Deploy: [onrender.com](https://katarzyna-wilczar-writer.onrender.com) ![Render](https://img.shields.io/website-up-down-green-red/http/katarzyna-wilczar-writer.onrender.com.svg)
 
-[![Repo Updated Badge](https://badges.strrl.dev/updated/${owner}/${repo})](https://badges.strrl.dev)
+[![Repo Updated Badge](https://badges.strrl.dev/updated/reisene/wilczar.writer)](https://badges.strrl.dev)
 
 ## O projekcie
 
