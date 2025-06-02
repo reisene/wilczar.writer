@@ -1,5 +1,5 @@
 name: "Pull Request Labeler"
-on: [ pull_request ]
+on: [ pull_request_target ]
 
 jobs:
   labeler:
@@ -8,6 +8,8 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
+      issues: write
+      checks: write
     
     steps:
     - id: Checkout
