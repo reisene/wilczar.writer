@@ -41,6 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Funkcja: Renderuj listę newsów
+  function escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   function renderNewsList(posts) {
     newsWrapper.innerHTML = '';
     posts.forEach((html, i) => {
@@ -54,9 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
       newsCache[i] = html;
       newsWrapper.innerHTML += `
         <div class="news-item" data-index="${i}">
-          <h3>${title}</h3>
-          <time>${date}</time>
-          <p>${preview}...</p>
+          <h3>${escapeHTML(title)}</h3>
+          <time>${escapeHTML(date)}</time>
+          <p>${escapeHTML(preview)}...</p>
           <button class="news-more-btn" data-index="${i}">Więcej</button>
         </div>
       `;
